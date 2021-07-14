@@ -1,9 +1,9 @@
-![My Alurakut Page](https://github.com/Lais2Barreto/alurakut/blob/main/my_alurakut.png)
+[![My Alurakut Page](https://github.com/Lais2Barreto/alurakut/blob/main/my_alurakut.png)](https://alurakut-f9pthgvtd-lais2barreto.vercel.app)
 
 # Alurakut by Lais Barreto :star:
 
 
-[Click here to visit the website](https://alurakut-f9pthgvtd-lais2barreto.vercel.app)
+[Click here or in the picture above to visit the website](https://alurakut-f9pthgvtd-lais2barreto.vercel.app)
 
 
 ## Example app with styled-components
