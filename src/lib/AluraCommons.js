@@ -27,7 +27,7 @@ export function AlurakutMenu({ githubUser }) {
         <AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />
 
         <nav style={{ flex: 1 }}>
-          {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
+          {[{ name: 'Home', slug: '/'}, {name: 'Friends', slug: '/Friends'}, {name: 'Communities', slug: '/Communities'}].map((menuItem) => (
             <Link key={`key__${menuItem.name.toLocaleLowerCase()}`} href={`${menuItem.slug.toLocaleLowerCase()}`}>
               {menuItem.name}
             </Link>
@@ -36,10 +36,10 @@ export function AlurakutMenu({ githubUser }) {
 
         <nav>
           <a href={`/logout`}>
-            Sair
+            Log out
           </a>
           <div>
-            <input placeholder="Pesquisar no Orkut" />
+            <input placeholder="Search" />
           </div>
         </nav>
 
@@ -54,7 +54,7 @@ export function AlurakutMenu({ githubUser }) {
 }
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
-  background-color: #308BC5;
+  background-color: #415ca2;
 
   .alurakutMenuProfileSidebar {
     background: white;
@@ -81,7 +81,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
     .boxLink {
       font-size: 18px;
-      color: #2E7BB4;
+      color: #54dce9;
       -webkit-text-decoration: none;
       text-decoration: none;
       font-weight: 800;
@@ -96,7 +96,7 @@ AlurakutMenu.Wrapper = styled.header`
   }
 
   .container {
-    background-color: #308BC5;
+    background-color: #415ca2;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -145,7 +145,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
     input {
       color: #ffffff;
-      background: #5579A1;
+      background-color: rgba(64, 43, 76, .4);;
       padding: 10px 42px;
       border: 0;
       background-image: url(${`${BASE_URL}/icons/search.svg`});
@@ -195,19 +195,19 @@ export function AlurakutProfileSidebarMenuDefault() {
       <nav>
         <a href="/">
           <img src={`${BASE_URL}/icons/user.svg`} />
-            Perfil
+            Profile
           </a>
         <a href="/">
           <img src={`${BASE_URL}/icons/book.svg`} />
-            Recados
+            Messages
           </a>
         <a href="/">
           <img src={`${BASE_URL}/icons/camera.svg`} />
-            Fotos
+            Pictures
           </a>
         <a href="/">
           <img src={`${BASE_URL}/icons/sun.svg`} />
-            Depoimentos
+            Testimonies
           </a>
       </nav>
       <hr />
@@ -218,7 +218,7 @@ export function AlurakutProfileSidebarMenuDefault() {
           </a>
         <a href="/logout">
           <img src={`${BASE_URL}//icons/logout.svg`} />
-            Sair
+            Log out
           </a>
       </nav>
     </AlurakutProfileSidebarMenuDefault.Wrapper>
@@ -227,7 +227,7 @@ export function AlurakutProfileSidebarMenuDefault() {
 AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
   a {
     font-size: 12px;
-    color: #2E7BB4;
+    color: #54dce9;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -248,11 +248,11 @@ export function OrkutNostalgicIconSet(props) {
   return (
     <OrkutNostalgicIconSet.List>
       {[
-        { name: 'Recados', slug: 'recados', icon: 'book' },
-        { name: 'Fotos', slug: 'fotos', icon: 'camera' },
+        { name: 'Testimonies', slug: 'testimonies', icon: 'book' },
+        { name: 'Pictures', slug: 'pictures', icon: 'camera' },
         { name: 'Videos', slug: 'videos', icon: 'video-camera' },
-        { name: 'Fãs', slug: 'fas', icon: 'star' },
-        { name: 'Mensagens', slug: 'mensagens', icon: 'email' },
+        { name: 'Fans', slug: 'fas', icon: 'star' },
+        { name: 'Messages', slug: 'messages', icon: 'email' },
       ].map(({ name, slug, icon }) => (
         <li key={`orkut__icon_set__${slug}`}>
           <span style={{ gridArea: 'title' }} className="OrkutNostalgicIconSet__title">
@@ -265,8 +265,8 @@ export function OrkutNostalgicIconSet(props) {
         </li>
       ))}
       {[
-        { name: 'Confiável', slug: 'confiavel', icon: 'smile' },
-        { name: 'Legal', slug: 'legal', icon: 'cool' },
+        { name: 'Reliable', slug: 'reliable', icon: 'smile' },
+        { name: 'Cool', slug: 'cool', icon: 'cool' },
         { name: 'Sexy', slug: 'sexy', icon: 'heart' },
       ].map(({ name, slug, icon }) => {
         const total = props[slug] ? props[slug] : 2;
@@ -295,7 +295,7 @@ OrkutNostalgicIconSet.List = styled.ul`
   flex-wrap: wrap;
   li {
     font-size: 12px;
-    color: #5A5A5A;
+    color: #54dce9;
     display: grid;
     grid-template-areas:
       "title title"
