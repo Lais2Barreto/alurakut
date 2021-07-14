@@ -1,16 +1,24 @@
-# Example app with styled-components
+![My Alurakut Page](https://github.com/Lais2Barreto/alurakut/blob/main/my_alurakut.png)
+
+# Alurakut by Lais Barreto :star:
+
+
+[Click here to visit the website](https://alurakut-f9pthgvtd-lais2barreto.vercel.app)
+
+
+## Example app with styled-components
 
 This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
 
 For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
 
-## Preview
+## Preview :computer:
 
 Preview the example live on [StackBlitz](http://stackblitz.com/):
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
 
-## Deploy your own
+## :rocket:  Deploy your own :rocket: 
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
@@ -28,7 +36,7 @@ yarn create next-app --example with-styled-components with-styled-components-app
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-### Try it on CodeSandbox
+### :rocket: Try it on CodeSandbox :rocket:
 
 [Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
 
